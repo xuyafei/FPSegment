@@ -15,6 +15,7 @@
 		D12132881EEC2ADA006BD511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12132861EEC2ADA006BD511 /* LaunchScreen.storyboard */; };
 		D12132931EEC2ADA006BD511 /* FPSegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132921EEC2ADA006BD511 /* FPSegmentTests.m */; };
 		D121329E1EEC2ADA006BD511 /* FPSegmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D121329D1EEC2ADA006BD511 /* FPSegmentUITests.m */; };
+		D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		D12132991EEC2ADA006BD511 /* FPSegmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPSegmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D121329D1EEC2ADA006BD511 /* FPSegmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSegmentUITests.m; sourceTree = "<group>"; };
 		D121329F1EEC2ADA006BD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12132AC1EEC2C4A006BD511 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		D12132B21EEC302D006BD511 /* FPSegmentDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		D12132771EEC2ADA006BD511 /* FPSegment */ = {
 			isa = PBXGroup;
 			children = (
+				D12132AF1EEC2F53006BD511 /* FPSegmentSource */,
 				D121327B1EEC2ADA006BD511 /* AppDelegate.h */,
 				D121327C1EEC2ADA006BD511 /* AppDelegate.m */,
 				D121327E1EEC2ADA006BD511 /* ViewController.h */,
@@ -138,6 +143,32 @@
 				D121329F1EEC2ADA006BD511 /* Info.plist */,
 			);
 			path = FPSegmentUITests;
+			sourceTree = "<group>";
+		};
+		D12132AB1EEC2B81006BD511 /* FPCore */ = {
+			isa = PBXGroup;
+			children = (
+				D12132AC1EEC2C4A006BD511 /* UIView+Sizes.h */,
+				D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */,
+			);
+			name = FPCore;
+			sourceTree = "<group>";
+		};
+		D12132AF1EEC2F53006BD511 /* FPSegmentSource */ = {
+			isa = PBXGroup;
+			children = (
+				D12132B01EEC2FC7006BD511 /* FPDefines */,
+				D12132AB1EEC2B81006BD511 /* FPCore */,
+			);
+			name = FPSegmentSource;
+			sourceTree = "<group>";
+		};
+		D12132B01EEC2FC7006BD511 /* FPDefines */ = {
+			isa = PBXGroup;
+			children = (
+				D12132B21EEC302D006BD511 /* FPSegmentDefines.h */,
+			);
+			name = FPDefines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +310,7 @@
 				D12132801EEC2ADA006BD511 /* ViewController.m in Sources */,
 				D121327D1EEC2ADA006BD511 /* AppDelegate.m in Sources */,
 				D121327A1EEC2ADA006BD511 /* main.m in Sources */,
+				D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
