@@ -16,6 +16,7 @@
 		D12132931EEC2ADA006BD511 /* FPSegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132921EEC2ADA006BD511 /* FPSegmentTests.m */; };
 		D121329E1EEC2ADA006BD511 /* FPSegmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D121329D1EEC2ADA006BD511 /* FPSegmentUITests.m */; };
 		D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */; };
+		D12132B61EEC3333006BD511 /* FPSegmentViewTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		D12132AC1EEC2C4A006BD511 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
 		D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
 		D12132B21EEC302D006BD511 /* FPSegmentDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentDefines.h; sourceTree = "<group>"; };
+		D12132B41EEC3333006BD511 /* FPSegmentViewTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentViewTitleItem.h; sourceTree = "<group>"; };
+		D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSegmentViewTitleItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 		D12132AF1EEC2F53006BD511 /* FPSegmentSource */ = {
 			isa = PBXGroup;
 			children = (
+				D12132B31EEC31F2006BD511 /* FPSegmentView */,
 				D12132B01EEC2FC7006BD511 /* FPDefines */,
 				D12132AB1EEC2B81006BD511 /* FPCore */,
 			);
@@ -169,6 +173,15 @@
 				D12132B21EEC302D006BD511 /* FPSegmentDefines.h */,
 			);
 			name = FPDefines;
+			sourceTree = "<group>";
+		};
+		D12132B31EEC31F2006BD511 /* FPSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				D12132B41EEC3333006BD511 /* FPSegmentViewTitleItem.h */,
+				D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */,
+			);
+			name = FPSegmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +324,7 @@
 				D121327D1EEC2ADA006BD511 /* AppDelegate.m in Sources */,
 				D121327A1EEC2ADA006BD511 /* main.m in Sources */,
 				D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */,
+				D12132B61EEC3333006BD511 /* FPSegmentViewTitleItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
