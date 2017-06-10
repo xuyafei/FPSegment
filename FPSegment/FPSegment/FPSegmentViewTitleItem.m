@@ -96,4 +96,49 @@
     _highlight = highlight;
     self.titleLabel.textColor = highlight == YES ? _hasHighlightColor == YES ? self.highlightColor : _defaultTitleColor_Highlight : _hasNormalColor == YES ? self.normalColor : _defaultTitleColor_Normal;
 }
+
+- (void)addTarget:(id)target action:(SEL)action {
+    _target = target;
+    _action = action;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = touches.anyObject;
+    CGPoint touchPoint = [touch locationInView:self];
+    
+    if((touchPoint.x >= 0 && touchPoint.x <= self.width) && (touchPoint.y >= 0 && touchPoint.y <= self.height)) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.alpha = 0.2;
+            _touchedFlag = YES;
+        }];
+    }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = touches.anyObject;
+    CGPoint touchPoint = [touch locationInView:self];
+    
+    if((touchPoint.x >= 0 && touchPoint.x <= self.width) && (touchPoint.y >= 0 && touchPoint.y <= self.height)) {
+        if(_touchedFlag) {
+            [_target performSelector:_action withObject:self];
+        }
+    }
+    
+    _touchedFlag = NO;
+    [UIView animateWithDuration:0.1 animations:^{
+        self.alpha = 1;
+    }];
+}
+
+- (UILabel *)titleLabel {
+    if(!_titleLabel) {
+        _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
+        _titleLabel.textColor = _defaultTitleColor_Normal;
+        _titleLabel.font = _defaultFont;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_titleLabel];
+    }
+    
+    return _titleLabel;
+}
 @end
