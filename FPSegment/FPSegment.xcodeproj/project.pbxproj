@@ -17,6 +17,7 @@
 		D121329E1EEC2ADA006BD511 /* FPSegmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D121329D1EEC2ADA006BD511 /* FPSegmentUITests.m */; };
 		D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132AD1EEC2C4A006BD511 /* UIView+Sizes.m */; };
 		D12132B61EEC3333006BD511 /* FPSegmentViewTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */; };
+		D12132B91EEC4724006BD511 /* FPSegmentItemsContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12132B81EEC4724006BD511 /* FPSegmentItemsContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		D12132B21EEC302D006BD511 /* FPSegmentDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentDefines.h; sourceTree = "<group>"; };
 		D12132B41EEC3333006BD511 /* FPSegmentViewTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentViewTitleItem.h; sourceTree = "<group>"; };
 		D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSegmentViewTitleItem.m; sourceTree = "<group>"; };
+		D12132B71EEC4724006BD511 /* FPSegmentItemsContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSegmentItemsContentView.h; sourceTree = "<group>"; };
+		D12132B81EEC4724006BD511 /* FPSegmentItemsContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSegmentItemsContentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 			children = (
 				D12132B41EEC3333006BD511 /* FPSegmentViewTitleItem.h */,
 				D12132B51EEC3333006BD511 /* FPSegmentViewTitleItem.m */,
+				D12132B71EEC4724006BD511 /* FPSegmentItemsContentView.h */,
+				D12132B81EEC4724006BD511 /* FPSegmentItemsContentView.m */,
 			);
 			name = FPSegmentView;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12132801EEC2ADA006BD511 /* ViewController.m in Sources */,
+				D12132B91EEC4724006BD511 /* FPSegmentItemsContentView.m in Sources */,
 				D121327D1EEC2ADA006BD511 /* AppDelegate.m in Sources */,
 				D121327A1EEC2ADA006BD511 /* main.m in Sources */,
 				D12132AE1EEC2C4A006BD511 /* UIView+Sizes.m in Sources */,
